@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/static/css/style.css" type="text/css"> 
+
+{% block content %}
+
+    <div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+
+            <div class="login-form">
+                 <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+            </div>
+        </div>
+    </div>
+
+
+
+<br>
+<div><center><h3 style="font-family:verdana;color:white">Built by Ashish Bhawnani</h3></center></div>
+
+
+
+{% endblock %}
